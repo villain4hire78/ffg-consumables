@@ -1,0 +1,58 @@
+{
+  "name": "Pain Killer",
+  "type": "gear",
+  "img": "modules/ffg-consumables/images/painkiller.png",
+  "system": {
+    "description": "<p>A standard medical pain killer used to treat wounds. The medicine temporarily suppresses pain signals and accelerates the body's natural healing process.</p><p>Due to side effects, each dose after the first provides diminished benefits, and more than 5 doses in a day can lead to serious complications.</p>",
+    "attributes": {    }
+  }
+},
+    "metadata": {
+      "tags": ["Medical", "Consumable"],
+      "sources": ["Core Rulebook"]
+    },
+    "quantity": {
+      "value": 3,
+      "type": "Number",
+      "label": "Quantity",
+      "abrev": "Qty"
+    },
+    "encumbrance": {
+      "value": 0.1,
+      "type": "Number",
+      "label": "Encumbrance",
+      "abrev": "Encum",
+      "adjusted": 0.1
+    },
+    "price": {
+      "value": 25,
+      "type": "Number",
+      "label": "Price",
+      "adjusted": 25
+    },
+    "rarity": {
+      "value": 2,
+      "type": "Number",
+      "label": "Rarity",
+      "adjusted": 2,
+      "isrestricted": false
+    },
+    "itemattachment": [],
+    "itemmodifier": [],
+    "adjusteditemmodifer": []
+  },
+  "effects": [],
+  "folder": null,
+  "_id": "p5AinK1ll3r",
+  "flags": {
+    "starwarsffg": {
+      "isCompendium": false,
+      "ffgUuid": null,
+      "ffgIsOwned": false,
+      "loaded": false,
+      "config": {}
+    },
+    "ffg-consumables": {
+      "consumable": true,
+      "effectType": "painKiller",
+      "effectDescription": "Heals wounds based on previous painkiller use. First use heals 5 wounds, second use heals 4, third heals 3, fourth heals 2, fifth heals 1, and subsequent uses have no effect."

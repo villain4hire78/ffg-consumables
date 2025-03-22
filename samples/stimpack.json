@@ -1,0 +1,59 @@
+{
+  "name": "Stim Pack",
+  "type": "gear",
+  "img": "modules/ffg-consumables/images/stimpack.png",
+  "system": {
+    "description": "<p>A stimulant injection that temporarily improves reflexes and concentration. Provides a short boost of energy and focus in high-stress situations.</p><p>Each dose grants a boost die to the next skill check but causes 2 strain to the user.</p>",
+    "attributes": {},
+    "metadata": {
+      "tags": ["Medical", "Combat", "Consumable"],
+      "sources": ["Core Rulebook"]
+    },
+    "quantity": {
+      "value": 2,
+      "type": "Number",
+      "label": "Quantity",
+      "abrev": "Qty"
+    },
+    "encumbrance": {
+      "value": 0.1,
+      "type": "Number",
+      "label": "Encumbrance",
+      "abrev": "Encum",
+      "adjusted": 0.1
+    },
+    "price": {
+      "value": 35,
+      "type": "Number",
+      "label": "Price",
+      "adjusted": 35
+    },
+    "rarity": {
+      "value": 3,
+      "type": "Number",
+      "label": "Rarity",
+      "adjusted": 3,
+      "isrestricted": false
+    },
+    "itemattachment": [],
+    "itemmodifier": [],
+    "adjusteditemmodifer": []
+  },
+  "effects": [],
+  "folder": null,
+  "_id": "5t1mP4ck",
+  "flags": {
+    "starwarsffg": {
+      "isCompendium": false,
+      "ffgUuid": null,
+      "ffgIsOwned": false,
+      "loaded": false,
+      "config": {}
+    },
+    "ffg-consumables": {
+      "consumable": true,
+      "effectType": "stimPack",
+      "effectDescription": "Grants a boost die (blue) to the next skill check, but causes 2 strain to the user."
+    }
+  }
+}

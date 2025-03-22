@@ -1,0 +1,57 @@
+{
+  "id": "ffg-consumables",
+  "title": "FFG Consumables",
+  "description": "Adds consumable items with tracking functionality to the Star Wars FFG system",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "10",
+    "verified": "12",
+    "maximum": "12"
+  },
+  "authors": [
+    {
+      "name": "Your Name"
+    }
+  ],
+  "esmodules": [
+    "init.js"
+  ],
+  "styles": [
+    "styles/ffg-consumables.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "languages/en.json"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "starwarsffg",
+      "type": "system"
+    }
+  ],
+  "socket": true,
+  "url": "https://github.com/yourusername/ffg-consumables",
+  "manifest": "https://raw.githubusercontent.com/yourusername/ffg-consumables/main/module.json",
+  "download": "https://github.com/yourusername/ffg-consumables/releases/download/v1.0.0/ffg-consumables.zip",
+  "license": "LICENSE",
+  "readme": "README.md",
+  "bugs": "https://github.com/yourusername/ffg-consumables/issues",
+  "changelog": "https://github.com/yourusername/ffg-consumables/releases",
+  "system": ["starwarsffg"],
+  "relationships": {
+    "systems": [
+      {
+        "id": "starwarsffg",
+        "type": "system",
+        "manifest": "https://raw.githubusercontent.com/StarWarsFoundryVTT/StarWarsFFG/master/system.json",
+        "compatibility": {
+          "minimum": "1.8",
+          "verified": "1.906"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "ffg-consumables": {
+    "settings": {
+      "enablePainkillerLimit": {
+        "name": "Enable Painkiller Limit",
+        "hint": "Enable the rule where each painkiller gives diminishing returns and becomes ineffective after 5 uses"
+      }
+    },
+    "consumable": {
+      "consume": "Consume",
+      "markAsConsumable": "Mark as Consumable",
+      "type": "Consumable Type",
+      "types": {
+        "painKiller": "Pain Killer",
+        "stimPack": "Stim Pack",
+        "custom": "Custom"
+      },
+      "effect": "Effect Description",
+      "resetMedical": "Reset Painkiller Uses",
+      "healedWounds": "Painkiller healed {amount} wounds.",
+      "noRemaining": "No more of this consumable item remaining.",
+      "remainingQuantity": "Used one {name}. {quantity} remaining.",
+      "maxPainkillerUsed": "Maximum painkiller usage exceeded for the day.",
+      "painkillerReset": "Painkiller uses have been reset."
+    }
+  }
+}

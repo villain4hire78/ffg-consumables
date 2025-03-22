@@ -1,0 +1,82 @@
+<form class="{{cssClass}} item-sheet-consumable" autocomplete="off">
+  <header class="sheet-header">
+    <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" height="100" width="100"/>
+    <div class="header-fields">
+      <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
+      <div class="form-group-stacked consumable-details">
+        <label for="system.quantity.value">{{localize "SWFFG.ItemQuantity"}}</label>
+        <input type="text" name="system.quantity.value" value="{{data.system.quantity.value}}" data-dtype="Number"/>
+      </div>
+    </div>
+  </header>
+
+  {{!-- Sheet Navigation --}}
+  <nav class="sheet-tabs tabs" data-group="primary">
+    <a class="item" data-tab="description">{{localize "SWFFG.TabDescription"}}</a>
+    <a class="item" data-tab="details">{{localize "SWFFG.TabDetails"}}</a>
+    <a class="item" data-tab="consumable">Consumable</a>
+  </nav>
+
+  {{!-- Sheet Body --}}
+  <section class="sheet-body">
+    {{!-- Description Tab --}}
+    <div class="tab" data-group="primary" data-tab="description">
+      {{editor content=data.system.description target="system.description" button=true editable=editable}}
+    </div>
+
+    {{!-- Details Tab --}}
+    <div class="tab" data-group="primary" data-tab="details">
+      <div class="grid grid-2col">
+        <div class="resource">
+          <label class="resource-label">{{localize "SWFFG.ItemPrice"}}</label>
+          <input type="text" name="system.price.value" value="{{data.system.price.value}}" data-dtype="Number"/>
+        </div>
+        <div class="resource">
+          <label class="resource-label">{{localize "SWFFG.ItemRarity"}}</label>
+          <input type="text" name="system.rarity.value" value="{{data.system.rarity.value}}" data-dtype="Number"/>
+        </div>
+        <div class="resource">
+          <label class="resource-label">{{localize "SWFFG.ItemEncumbrance"}}</label>
+          <input type="text" name="system.encumbrance.value" value="{{data.system.encumbrance.value}}" data-dtype="Number"/>
+        </div>
+      </div>
+    </div>
+
+    {{!-- Consumable Tab --}}
+    <div class="tab" data-group="primary" data-tab="consumable">
+      <div class="form-group">
+        <label>Consumable Type</label>
+        <select name="flags.ffg-consumables.effectType">
+          <option value="painKiller" {{#if (eq effectType "painKiller")}}selected{{/if}}>Pain Killer</option>
+          <option value="stimPack" {{#if (eq effectType "stimPack")}}selected{{/if}}>Stim Pack</option>
+          <option value="custom" {{#if (eq effectType "custom")}}selected{{/if}}>Custom</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label>Effect Description</label>
+        <textarea name="flags.ffg-consumables.effectDescription" rows="4">{{object.flags.ffg-consumables.effectDescription}}</textarea>
+      </div>
+      
+      {{#if (eq effectType "painKiller")}}
+      <div class="info-block">
+        <h3>Pain Killer Rules</h3>
+        <p>When consumed, this item will:</p>
+        <ul>
+          <li>Heal 5 wounds if it's the first one used today</li>
+          <li>Heal 4 wounds if it's the second one used today</li>
+          <li>Heal 3 wounds if it's the third one used today</li>
+          <li>Heal 2 wounds if it's the fourth one used today</li>
+          <li>Heal 1 wound if it's the fifth one used today</li>
+          <li>Have no effect if 5 or more painkillers have already been used today</li>
+        </ul>
+        <p>Medical uses are tracked per character and reset daily.</p>
+      </div>
+      {{/if}}
+      
+      <div class="form-group">
+        <button type="button" class="consume-item"><i class="fas fa-prescription-bottle-alt"></i> Test Consume</button>
+      </div>
+    </div>
+  </section>
+</form>

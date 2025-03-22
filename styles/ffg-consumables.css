@@ -1,0 +1,174 @@
+/* FFG Consumables module styles */
+
+/* Consume button */
+.consume-item {
+  display: inline-block;
+  margin-left: 10px;
+  background: #782e22;
+  padding: 5px 10px;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.consume-item:hover {
+  background: #9e3c2c;
+  text-shadow: 0 0 8px white;
+}
+
+.consume-item i {
+  margin-right: 5px;
+}
+
+/* Consumable controls section */
+.consumable-controls {
+  margin: 8px 0;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.consumable-controls label {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.consumable-controls input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Painkiller status display */
+.painkiller-status {
+  margin: 10px 0;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.painkiller-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.painkiller-header h3 {
+  margin: 0;
+  color: #782e22;
+}
+
+.painkiller-tracker {
+  display: flex;
+  justify-content: space-between;
+}
+
+.painkiller-uses,
+.painkiller-effectiveness {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.painkiller-label {
+  font-size: 0.8em;
+  color: #666;
+}
+
+.painkiller-value {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* Reset medical uses button */
+.reset-medical-uses {
+  margin: 0;
+  background: #2e4478;
+  color: white;
+  padding: 3px 8px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-size: 0.8em;
+}
+
+.reset-medical-uses:hover {
+  background: #3c569e;
+  text-shadow: 0 0 8px white;
+}
+
+.reset-medical-uses i {
+  margin-right: 5px;
+}
+
+/* Info block in the consumable tab */
+.info-block {
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.info-block h3 {
+  margin-top: 0;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.info-block ul {
+  padding-left: 20px;
+}
+
+/* Chat message styling */
+.ffg-consumables.painkiller-message,
+.ffg-consumables.stim-pack-message {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.ffg-consumables.painkiller-message {
+  background: rgba(120, 46, 34, 0.1);
+  border-left: 3px solid #782e22;
+}
+
+.ffg-consumables.stim-pack-message {
+  background: rgba(46, 68, 120, 0.1);
+  border-left: 3px solid #2e4478;
+}
+
+.ffg-consumables h3 {
+  margin-top: 0;
+  font-size: 1.2em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+
+.ffg-consumables p {
+  margin: 5px 0;
+}
+
+/* Consumable item quantity styling */
+.consumable-details input {
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Tab styling */
+.sheet-tabs .item[data-tab="consumable"] {
+  color: #782e22;
+  font-weight: bold;
+}
+
+.sheet-tabs .item[data-tab="consumable"].active {
+  text-shadow: 0 0 10px rgba(120, 46, 34, 0.5);
+}
