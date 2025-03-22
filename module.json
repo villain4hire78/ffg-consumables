@@ -1,5 +1,6 @@
 {
   "id": "ffg-consumables",
+  "type": "module",
   "title": "FFG Consumables",
   "description": "Adds consumable items with tracking functionality to the Star Wars FFG system",
   "version": "1.0.0",
@@ -10,7 +11,7 @@
   },
   "authors": [
     {
-      "name": "Your Name"
+      "name": "Villain4Hire"
     }
   ],
   "esmodules": [
@@ -32,15 +33,15 @@
       "type": "system"
     }
   ],
+  "system": ["starwarsffg"],
   "socket": true,
-  "url": "https://github.com/yourusername/ffg-consumables",
-  "manifest": "https://raw.githubusercontent.com/yourusername/ffg-consumables/main/module.json",
-  "download": "https://github.com/yourusername/ffg-consumables/releases/download/v1.0.0/ffg-consumables.zip",
+  "url": "https://github.com/villain4hire78/ffg-consumables",
+  "manifest": "https://raw.githubusercontent.com/villain4hire78/ffg-consumables/main/module.json",
+  "download": "https://github.com/villain4hire78/ffg-consumables/releases/download/v1.0.0/ffg-consumables.zip",
   "license": "LICENSE",
   "readme": "README.md",
-  "bugs": "https://github.com/yourusername/ffg-consumables/issues",
-  "changelog": "https://github.com/yourusername/ffg-consumables/releases",
-  "system": ["starwarsffg"],
+  "bugs": "https://github.com/villain4hire78/ffg-consumables/issues",
+  "changelog": "https://github.com/villain4hire78/ffg-consumables/releases",
   "relationships": {
     "systems": [
       {
